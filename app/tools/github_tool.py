@@ -57,3 +57,6 @@ def search_code_in_repo(query: str) -> str:
         return "\n".join(matches) if matches else "No matches found."
     except GithubException as e:
         return f"GitHub error: {e.status} - {e.data}"
+
+# TODO: add pagination support for list_open_issues
+# TODO: add support for assigning issues to a user
